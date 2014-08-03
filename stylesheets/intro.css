@@ -37,7 +37,15 @@
 }
 
 #video {
-	display: none;
+	/*display: none;*/
+}
+
+#about p {
+	margin-bottom: 10px;
+}
+
+#call-to-action {
+	padding-top: 15px;
 }
 
 #letter-container{

@@ -17,6 +17,12 @@
     });
 
     $(function() {
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    })
+
+    $(function() {
         $('#letter-container-1st').fancyTypewriter({
             targetText: "Right now a rover is driving around Mars.",
             type: true,
@@ -36,11 +42,10 @@
                         // $('.letter-container').slideUp();
                         $('#video').attr('padding-top', '10%');
                         $('#video').fadeIn();
+                        Socialite.load($('article.social-sharing'));
                     }
                 });
             }
         });
-        // $.typer.options.typeSpeed = 50;
-        // $('#letter-container').typeTo("Right now a rover is driving around Mars. This is its story.");
     })
 })();
