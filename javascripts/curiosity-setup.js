@@ -17,16 +17,27 @@
     });
 
     $(function() {
-        $('#letter-container').fancyTypewriter({
-            targetText: "Right now a rover is driving around Mars. <br/> This is its story.",
+        $('#letter-container-1st').fancyTypewriter({
+            targetText: "Right now a rover is driving around Mars.",
             type: true,
-            steps: 3,
-            timeBetweenSteps: 25,
+            steps: 1,
+            timeBetweenSteps: 1,
             'mouseOver': false,
             underScore: false,
             callback: function() {
-                $('#letter-container').hide();
-
+                $('#letter-container-2nd').fancyTypewriter({
+                    targetText: "This is its story.",
+                    type: true,
+                    steps: 1,
+                    timeBetweenSteps: 1,
+                    'mouseOver': false,
+                    underScore: false,
+                    callback: function() {
+                        // $('.letter-container').slideUp();
+                        $('#video').attr('padding-top', '10%');
+                        $('#video').fadeIn();
+                    }
+                });
             }
         });
         // $.typer.options.typeSpeed = 50;
