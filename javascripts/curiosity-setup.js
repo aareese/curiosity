@@ -17,7 +17,19 @@
     });
 
     $(function() {
-        $.typer.options.typeSpeed = 50;
-        $('#letter-container').typeTo("Right now a rover is driving around Mars. This is its story.");
+        $('#letter-container').fancyTypewriter({
+            targetText: "Right now a rover is driving around Mars. <br/> This is its story.",
+            type: true,
+            steps: 3,
+            timeBetweenSteps: 25,
+            'mouseOver': false,
+            underScore: false,
+            callback: function() {
+                $('#letter-container').hide();
+
+            }
+        });
+        // $.typer.options.typeSpeed = 50;
+        // $('#letter-container').typeTo("Right now a rover is driving around Mars. This is its story.");
     })
 })();

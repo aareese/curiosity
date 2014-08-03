@@ -6,7 +6,10 @@
 	display: none;
 }
 
-
+#top {
+	background-image:url('/images/gallery2/06.jpg');
+	background-color:#cccccc;
+}
 
 /*----------------------------
 	Container & textbox
@@ -33,7 +36,9 @@
 	top: 210px;
 }
 
-
+#video {
+	display: none;
+}
 
 #letter-container{
 	font-size: 48px;
@@ -45,4 +50,10 @@ font-family:"Roboto_B";
 #letter-container > span{
 	font-weight: normal;
 font-family:"Roboto_B";
+}
+
+article.center iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
