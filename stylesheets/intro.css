@@ -11,6 +11,25 @@
 	background-color:#cccccc;
 }
 
+#coming-soon {
+	background-image:url('/images/gallery2/08.jpg');
+	background-color:#cccccc;
+}
+
+#coming-soon .video-coming-soon h1 {
+	/*background-color: #cccccc;*/
+	min-height: 100px;
+	color: #fff;
+}
+
+#coming-soon .video-coming-soon img {
+	/*background-color: #cccccc;*/
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 /*----------------------------
 	Container & textbox
 -----------------------------*/
@@ -61,12 +80,25 @@
 font-family:"Roboto_B";
 }
 
+
+h1.coming-soon{
+	color: #fff;
+	margin: 0 auto;
+	padding: 100px 0 20px;
+	width: 90%;
+	position:relative;
+	min-height: 90px;
+	font-size: 48px;
+	line-height: 55px;
+	font-weight: normal;
+	font-family:"Roboto_B";
+}
+
 article.center iframe{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .video-container {
 	position: relative;

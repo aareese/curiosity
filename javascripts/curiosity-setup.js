@@ -42,7 +42,17 @@
                         // $('.letter-container').slideUp();
                         $('#video').attr('padding-top', '10%');
                         $('#video').fadeIn();
-                        Socialite.load($('article.social-sharing'));
+                        // if ($.browser.mozilla) {
+                        //     $('#video').replaceWith($('#video-iframe'));
+                        //     $('#video-iframe').width('500px')
+                        //     $('#video-iframe').height('300px')
+                        // }
+                        stLight.options({
+                            publisher: "740c9547-1d4a-471b-9a7b-c186a6a786fa",
+                            doNotHash: false,
+                            doNotCopy: false,
+                            hashAddressBar: false
+                        });
                     }
                 });
             }
