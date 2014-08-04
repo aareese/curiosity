@@ -26,16 +26,16 @@
         $('#letter-container-1st').fancyTypewriter({
             targetText: "Right now a rover is driving around Mars.",
             type: true,
-            steps: 1,
-            timeBetweenSteps: 1,
+            steps: 3,
+            timeBetweenSteps: 20,
             'mouseOver': false,
             underScore: false,
             callback: function() {
                 $('#letter-container-2nd').fancyTypewriter({
                     targetText: "This is its story.",
                     type: true,
-                    steps: 1,
-                    timeBetweenSteps: 1,
+                    steps: 3,
+                    timeBetweenSteps: 20,
                     'mouseOver': false,
                     underScore: false,
                     callback: function() {
