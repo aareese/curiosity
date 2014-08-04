@@ -39,14 +39,14 @@
                     'mouseOver': false,
                     underScore: false,
                     callback: function() {
-                        // $('.letter-container').slideUp();
-                        $('#video').attr('padding-top', '10%');
-                        $('#video').fadeIn();
-                        // if ($.browser.mozilla) {
-                        //     $('#video').replaceWith($('#video-iframe'));
-                        //     $('#video-iframe').width('500px')
-                        //     $('#video-iframe').height('300px')
-                        // }
+                        // $('#video').attr('padding-top', '10%');
+                        // $('#video').fadeIn();
+                        if ($.browser.mozilla) {
+                            $('#video').replaceWith($('#video-iframe'));
+                            $('#video-iframe').wrap("<center></center>");
+                            $('#video-iframe').width('808px');
+                            $('#video-iframe').height('435px');
+                        }
                         stLight.options({
                             publisher: "740c9547-1d4a-471b-9a7b-c186a6a786fa",
                             doNotHash: false,
