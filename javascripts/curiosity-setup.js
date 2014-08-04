@@ -24,7 +24,7 @@
 
     $(function() {
         $('#letter-container-1st').fancyTypewriter({
-            targetText: "Right now a rover is driving around Mars.",
+            targetText: "Right now a scientific laboratory is driving around the surface of Mars.",
             type: true,
             steps: 3,
             timeBetweenSteps: 20,
